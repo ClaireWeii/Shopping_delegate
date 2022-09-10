@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "AMAZFIT GTS 3 無邊際鋁合金智慧手錶.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
