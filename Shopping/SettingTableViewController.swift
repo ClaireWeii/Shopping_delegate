@@ -60,6 +60,7 @@ class SettingTableViewController: UITableViewController{
 
     @IBAction func changeQty(_ sender: UIStepper) {
         
+        //取得Stepper的值
         apple01 = Int(stepperApple01.value)
         apple02 = Int(stepperApple02.value)
         apple03 = Int(stepperApple03.value)
@@ -67,6 +68,7 @@ class SettingTableViewController: UITableViewController{
         apple05 = Int(stepperApple05.value)
         apple06 = Int(stepperApple06.value)
         
+        //傳到quantityLabel中
         quantityApple01.text = String(apple01)
         quantityApple02.text = String(apple02)
         quantityApple03.text = String(apple03)
@@ -80,7 +82,7 @@ class SettingTableViewController: UITableViewController{
     
     func calculate1(){
         
-        // 字串轉數字
+        //字串轉數字
         let apple01Price = Float(priceApple01.text!)!
         let apple02Price = Float(priceApple02.text!)!
         let apple03Price = Float(priceApple03.text!)!
@@ -88,7 +90,7 @@ class SettingTableViewController: UITableViewController{
         let apple05Price = Float(priceApple05.text!)!
         let apple06Price = Float(priceApple06.text!)!
         
-        // 總計 金額*數量
+        //總計 金額*數量
         let sum = apple01Price*Float(apple01)+apple02Price*Float(apple02)+apple03Price*Float(apple03)+apple04Price*Float(apple04)+apple05Price*Float(apple05)+apple06Price*Float(apple06)
         let appleSum = String(sum)
         

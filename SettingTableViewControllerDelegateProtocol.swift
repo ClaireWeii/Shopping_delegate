@@ -12,6 +12,7 @@ protocol SettingTableViewControllerDelegate: AnyObject {
     func list(product: Product, all:[Order])
 }
 
+//使用enum封裝product的項目
 enum Product {
     case apple
     case asus
@@ -20,6 +21,7 @@ enum Product {
     case samsung
 }
 
+//使用struct定義order的結構
 struct Order {
     var price: Float
     var amonut: Int
