@@ -44,7 +44,6 @@ class ViewController: UIViewController {
           if let vc = segue.destination as? SettingTableViewController{
               appleVC = vc
               vc.delegate = self
-
           }
         }
         

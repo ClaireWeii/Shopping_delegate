@@ -100,7 +100,7 @@ class SettingTableViewController3: UITableViewController {
         let fitbit08Price = Float(priceFitbit08.text!)!
         let fitbit09Price = Float(priceFitbit09.text!)!
         
-        let sum = fitbit01Price*Float(fitbit01)+fitbit02Price*Float(fitbit02)+fitbit03Price*Float(fitbit02)+fitbit04Price*Float(fitbit04)+fitbit05Price*Float(fitbit05)+fitbit06Price*Float(fitbit06)+fitbit07Price*Float(fitbit07)+fitbit08Price*Float(fitbit08)+fitbit09Price*Float(fitbit09)
+        let sum = fitbit01Price*Float(fitbit01)+fitbit02Price*Float(fitbit02)+fitbit03Price*Float(fitbit03)+fitbit04Price*Float(fitbit04)+fitbit05Price*Float(fitbit05)+fitbit06Price*Float(fitbit06)+fitbit07Price*Float(fitbit07)+fitbit08Price*Float(fitbit08)+fitbit09Price*Float(fitbit09)
         let fitbitSum = String(sum)
         
         delegate?.amount(product: .fitbit, all: fitbitSum)
