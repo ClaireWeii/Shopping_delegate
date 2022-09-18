@@ -26,14 +26,16 @@ class ViewController: UIViewController {
     
     var selectedButton : UIButton!
     
+    //定義子分頁
     var appleVC: SettingTableViewController?
     var asusVC: SettingTableViewController1?
     var garminVC: SettingTableViewController2?
     var fitbitVC: SettingTableViewController3?
     var samsungVC: SettingTableViewController4?
     
-    var asusSum: Int = 0
+    //定義各品項總金額
     var appleSum: Int = 0
+    var asusSum: Int = 0
     var garminSum: Int = 0
     var fitbitSum: Int = 0
     var samsungSum: Int = 0
@@ -90,7 +92,7 @@ class ViewController: UIViewController {
         containerView2.isHidden = true
         containerView3.isHidden = true
         containerView4.isHidden = true
-        calTotal()
+        //calTotal()
     }
     
     @IBAction func showAsusList(_ sender: Any) {
@@ -100,7 +102,7 @@ class ViewController: UIViewController {
         containerView2.isHidden = true
         containerView3.isHidden = true
         containerView4.isHidden = true
-        calTotal()
+        //calTotal()
     }
     
     @IBAction func showGarminList(_ sender: Any) {
@@ -120,7 +122,7 @@ class ViewController: UIViewController {
         containerView2.isHidden = true
         containerView3.isHidden = false
         containerView4.isHidden = true
-        calTotal()
+        //calTotal()
     }
    
     @IBAction func showSamsungList(_ sender: Any) {
@@ -130,7 +132,7 @@ class ViewController: UIViewController {
         containerView2.isHidden = true
         containerView3.isHidden = true
         containerView4.isHidden = false
-        calTotal()
+        //calTotal()
     }
     
     
